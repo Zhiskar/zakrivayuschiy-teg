@@ -53,11 +53,11 @@
 }
 
 @media (375px < width) {
-  .header {     
+  .header {
     min-inline-size: 376px;
     max-inline-size: 700px;
     min-block-size: 368px;
-    padding-block-start: clamp(120px 110px 136px);    
+    padding-block-start: clamp(120px 110px 136px);
   }
 }
 
@@ -71,18 +71,18 @@
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
   font-style: normal;
-  line-height: 49px;  
+  line-height: 49px;
 }
 
 @media (375px < width) {
-  .header__logo {    
+  .header__logo {
     padding-block-start: clamp(120px 110px 136px);
   }
 }
 
 .header__title {
   margin-inline-start: auto;
-  margin-inline-end: auto;  
+  margin-inline-end: auto;
   color: currentColor;
   font-family: var(--accent-font, "PressStart2P");
   font-weight: var(--main-font-weight, 400);
@@ -92,7 +92,7 @@
 }
 
 @media (375px < width) {
-  .header__logo {    
+  .header__logo {
     padding-block-start: 30px;
   }
 }
@@ -108,7 +108,6 @@
   gap: 9px;
   justify-content: flex-start;
 }
-
 
 .theme-menu__button {
   background-color: inherit;
@@ -128,26 +127,25 @@
 
 .theme-menu__button:disabled {
   pointer-events: none;
-  opacity: .6;  
+  opacity: 0.6;
 }
 
 .theme-menu__button:focus {
   outline: none;
-  opacity: .6;  
+  opacity: 0.6;
 }
 
 .theme-menu__button::after {
   content: "";
   display: block;
-  inline-size: 100%; 
-  block-size: 2px; 
+  inline-size: 100%;
+  block-size: 2px;
   background-color: currentColor;
   position: absolute;
   margin-block-start: 3px;
   scale: 0;
   transform-origin: 0 0;
 }
-
 
 .theme-menu__button:focus-visible::after {
   animation-name: focus-visually-slide;
@@ -161,21 +159,21 @@
   display: block;
   position: absolute;
   inset-block-start: 0;
-  inset-inline-start: -20px; 
-  animation-name: arrow-move; 
+  inset-inline-start: -20px;
+  animation-name: arrow-move;
   animation-duration: 0.5s;
   animation-timing-function: easy-in-out;
   animation-iteration-count: infinite;
-  animation-direction: reverse;  
+  animation-direction: reverse;
 }
 
 .theme-menu__button:hover {
-  opacity: .6;  
-} 
+  opacity: 0.6;
+}
 
 .content {
   inline-size: 100%;
-  min-block-size: 760px; 
+  min-block-size: 760px;
   background-color: var(--main-bg-color, #ffffff);
   border: 2px solid var(--main-color, #000000);
   margin-inline-start: auto;
@@ -186,7 +184,7 @@
   .content {
     min-inline-size: 376px;
     max-inline-size: 700px;
-    min-block-size: 959px;    
+    min-block-size: 959px;
   }
 }
 
@@ -195,7 +193,7 @@
   padding-block-end: var(--title-bottome-pad, 6px);
   padding-inline-start: 10px;
   padding-inline-end: 10px;
-  font-family: var(--main-font, 'Inter-Variable', sans-serif);
+  font-family: var(--main-font, "Inter-Variable", sans-serif);
   font-size: 18px;
   line-height: 21.78px;
   font-weight: var(--accent-font-weight, 700);
@@ -217,7 +215,7 @@
 }
 
 .content__card-paragraph {
-  font-family: var(--main-font, 'Inter-Variable');
+  font-family: var(--main-font, "Inter-Variable");
   text-align: start;
   font-weight: var(--main-font-weight, 400);
   font-size: 18px;
@@ -238,7 +236,7 @@
   outline: 2px solid transparent;
   transition-property: outline;
   transition-duration: 0.3s;
-  transition-timing-function: ease;  
+  transition-timing-function: ease;
   cursor: pointer;
 }
 
@@ -263,12 +261,12 @@
   outline: 2px solid var(--main-color, #000000);
   transition: box-shadow 0.3s ease, color 1s ease;
   overflow: hidden;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .card__like-button:focus {
   outline: none;
-  box-shadow: 2px 2px 0  var(--main-color, #000000);
+  box-shadow: 2px 2px 0 var(--main-color, #000000);
 }
 
 .card__like-button::after {
@@ -279,19 +277,18 @@
   background-color: var(--main-color, #000000);
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
-  
 }
 
 .card__like-button:hover::after {
   transform: translateX(0);
 }
 
-.card__like-button:hover {  
+.card__like-button:hover {
   color: var(--main-bg-color, #ffffff);
 }
 
 .button__text {
-  font-family: var(--accent-font, 'PressStart2P', sans-serif);
+  font-family: var(--accent-font, "PressStart2P", sans-serif);
   font-size: 14px;
   line-height: 12.6px;
   font-weight: var(--main-font-weight, 400);
@@ -302,35 +299,35 @@
 }
 
 @media (375px < width) {
-  .button__text {    
-    display: inline-block;   
+  .button__text {
+    display: inline-block;
   }
 }
 
 .footer {
-  display: flex;  
+  display: flex;
   justify-content: center;
   padding-block-start: 50px;
-  padding-block-end: 100px;  
+  padding-block-end: 100px;
   background-color: var(--main-bg-color, #ffffff);
   margin-inline-start: auto;
   margin-inline-end: auto;
 }
 
 @media (375px < width) {
-  .footer {    
+  .footer {
     min-inline-size: 376px;
     max-inline-size: 700px;
-    min-block-size: 205px;    
+    min-block-size: 205px;
   }
 }
 
-.footer__button-save {  
-  position: relative;  
+.footer__button-save {
+  position: relative;
   min-inline-size: 306px;
-  min-block-size: 84px;  
+  min-block-size: 84px;
   background-color: transparent;
-  outline: 2px solid var(--main-color, #000000);  
+  outline: 2px solid var(--main-color, #000000);
   color: var(--main-color, #000000);
   overflow: hidden;
   cursor: pointer;
@@ -339,7 +336,7 @@
 
 .footer__button-save:focus {
   outline: none;
-  box-shadow: 2px 2px 0  var(--main-color, #000000);
+  box-shadow: 2px 2px 0 var(--main-color, #000000);
 }
 
 .footer__button-save::after {
@@ -351,21 +348,21 @@
   block-size: 100%;
   background-color: var(--main-color, #000000);
   transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;  
+  transition: transform 0.5s ease-in-out;
 }
 
 .footer__button-save:hover::after {
   transform: translateX(0);
 }
 
-.footer__button-save:hover {  
+.footer__button-save:hover {
   color: var(--main-bg-color, #ffffff);
 }
 
 @media (width > 375px) {
-  .footer__button-save {    
+  .footer__button-save {
     min-inline-size: 335px;
-    min-block-size: 55px;    
+    min-block-size: 55px;
   }
 
   .footer__button-content {
@@ -384,11 +381,11 @@
   .footer__button-content {
     flex-direction: row;
     gap: 8px;
-    align-items: center;  
+    align-items: center;
   }
 }
 
-.floppy {  
+.floppy {
   inline-size: 28px;
   aspect-ratio: 1/1;
   margin-block-end: 8px;
@@ -399,9 +396,7 @@
 @media (375px < width) {
   .floppy {
     display: inline-block;
-    inline-size: 21px; 
-    margin-inline-end: 8px;   
+    inline-size: 21px;
+    margin-inline-end: 8px;
   }
 }
-
-
