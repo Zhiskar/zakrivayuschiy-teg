@@ -363,7 +363,7 @@
     min-block-size: 55px;
   }
 
-  .footer__button-content {
+  .footer__button-save {
     display: flex;
     flex-direction: column;
     gap: 8px;
