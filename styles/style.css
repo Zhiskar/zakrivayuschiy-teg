@@ -45,9 +45,9 @@
   gap: 21px;
   justify-content: center;
   align-items: center;
+  padding-block-start: clamp(120px, 122px, 136px);
   background-color: var(--main-bg-color, #ffffff);
   border: 2px solid var(--main-color, #000000);
-  padding-block-start: 120px;
   padding-block-end: 21px;
 }
 
@@ -55,7 +55,6 @@
   .header {
     min-inline-size: 376px;
     max-inline-size: 700px;
-    padding-block-start: clamp(120px 123px 136px);
     gap: 29px;
   }
 }
@@ -71,7 +70,6 @@
   text-transform: uppercase;
   font-style: normal;
   line-height: 49px;
-  padding-block-start: clamp(120px, 110px, 136px);
 }
 
 .header__title {
@@ -105,7 +103,7 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
   justify-content: flex-start;
 }
 
@@ -216,6 +214,8 @@
   border-block-start: 2px solid var(--main-color, #000000);
   inline-size: 100%;
   aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
 }
 
 .content__card-text {
@@ -244,7 +244,7 @@
   border-block-end: 2px solid var(--main-color, #000000);
   border-inline-start: 2px solid var(--main-color, #000000);
   border-inline-end: 2px solid var(--main-color, #000000);
-  padding-inline-end: 27px;
+  padding-inline-end: 30px;
   padding-block-end: 25px;
 }
 
@@ -255,6 +255,9 @@
 }
 
 .card__icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: inherit;
   outline: 2px solid transparent;
   transition-property: outline;
@@ -283,7 +286,7 @@
 .button {
   background-color: var(--main-bg-color, #ffffff);
   color: var(--main-color, #000000);
-  outline: 2px solid var(--main-color, #000000);
+  border: 2px solid var(--main-color, #000000);
   transition: box-shadow 0.3s ease, color 1s ease;
   overflow: hidden;
   cursor: pointer;
@@ -294,7 +297,6 @@
 }
 
 .button:focus-visible {
-  border: 2px solid var(--main-color, #000000);
   box-shadow: 2px 2px 0 var(--main-color, #000000);
 }
 
@@ -340,7 +342,7 @@
 .save {
   display: flex;
   justify-content: center;
-  padding-block-start: 50px;
+  padding-block-start: 52px;
   padding-block-end: 100px;
   margin-inline-start: auto;
   margin-inline-end: auto;
@@ -372,7 +374,7 @@
     /*min-inline-size: 333px;*/
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: 5px;
     align-items: center;
     justify-content: center;
     padding-block-start: 13px;
