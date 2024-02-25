@@ -297,9 +297,7 @@
   inline-size: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: center;
-  border-block-start: 2px solid var(--main-color);
-  border-block-end: 2px solid var(--main-color);
+  object-position: center;  
 }
 
 .content__card-text {
@@ -539,7 +537,7 @@
 .diskette[open] .diskette__button {
   background-color: var(--main-bg-color, #ffffff);
   color: var(--main-color, #000000);
-  inline-size: 100%;
+  min-inline-size: 296px;
   border: 2px solid var(--main-color, #000000);
   text-align: center;
   cursor: pointer;

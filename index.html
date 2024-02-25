@@ -562,13 +562,12 @@
             >
           </li>
         </ul>
-        <button
-          type="button"
-          class="diskette__button"
-          onclick="window['dialog-id'].close()"
-        >
-          <span class="diskette__text">ОК</span>
-        </button>
+        <form method="dialog">
+          <button class="diskette__button">
+                <span class="diskette__text">ОК</span>
+            </button>
+        </form> 
+        
       </dialog>
     </main>
     <script src="./scripts/set-theme.js"></script>
