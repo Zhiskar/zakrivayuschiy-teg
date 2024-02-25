@@ -298,8 +298,8 @@
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
-  border-top: 2px solid var(--main-color, #000000);
-  /*border-bottom: 2px solid var(--main-color, #000000);*/
+  /*border-block-start: 2px solid var(--main-color, #000000);
+  border-block-end: 2px solid var(--main-color, #000000);*/
 }
 
 .content__card-text {

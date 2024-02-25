@@ -9,8 +9,7 @@
   --btn-text-color: #00cc14;
   --main-bg-color: #000000;
   --main-font-weight: 465;
-  --accent-font-weight: 785;
-  --bg-image: url(../svg/pattern-dark.svg);
+  --accent-font-weight: 785;  
   --heart-contour: #00cc14;
   --heart-sparks: #ff0000;
   --label-shadow: rgba(0, 0, 0, 1);
@@ -28,8 +27,7 @@
   --accent-font-weight: 700;
   --main-color: #000000;
   --btn-text-color: #ffffff;
-  --main-bg-color: #ffffff;
-  --bg-image: url(../svg/pattern-light.svg);
+  --main-bg-color: #ffffff;  
   --heart-contour: #000000;
   --heart-sparks: #ff0000;
   --label-shadow: rgb(100%, 100%, 100%, 1);
@@ -52,8 +50,7 @@
     --btn-text-color: #00cc14;
     --main-bg-color: #000000;
     --main-font-weight: 465;
-    --accent-font-weight: 785;
-    --bg-image: url(../svg/pattern-dark.svg);
+    --accent-font-weight: 785;    
     --heart-contour: #00cc14;
     --heart-sparks: #ff0000;
     --label-shadow: rgba(0, 0, 0, 1);
