@@ -548,7 +548,8 @@
         </button>
       </div>
 
-      <dialog id="dialog-id" class="diskette">        
+      <dialog id="dialog-id" class="diskette">
+        <form>
         <ul class="diskette__floppy-text">
           <li>
             <svg
@@ -562,13 +563,12 @@
             >
           </li>
         </ul>
-        <button
-        class="diskette__button"
-        type="button"
-        onclick="window['dialog-id'].close()">
-        <span class="diskette__text">ОК</span>
-      </button>
-        
+        </form>
+        <form method="dialog">
+          <button class="diskette__button">
+                <span class="diskette__text">ОК</span>
+            </button>
+        </form> 
         
       </dialog>
     </main>
