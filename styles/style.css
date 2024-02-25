@@ -295,9 +295,11 @@
 
 .content__card-image-picture {
   inline-size: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
+  border-block-start: 2px solid var(--main-color);
+  border-block-end: 2px solid var(--main-color);
 }
 
 .content__card-text {
