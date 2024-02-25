@@ -189,8 +189,8 @@
 .content__card {
   background-color: var(--main-bg-color, #ffffff);
   border-block-start: 2px solid var(--main-color, #000000);
-  border-inline-start: 2px solid var(--main-color, #000000);
   border-inline-end: 2px solid var(--main-color, #000000);
+  border-inline-start: 2px solid var(--main-color, #000000);
 }
 
 .content__card:not(:first-child) {
@@ -213,6 +213,7 @@
   font-size: 18px;
   line-height: 121%;
   text-align: start;
+  border-block-end: 2px solid var(--main-color, #000000);
 }
 
 @media (width > 375px) {
@@ -305,6 +306,7 @@
   flex-direction: column;
   gap: 27px;
   padding: 23px;
+  border-block-start: 2px solid var(--main-color, #000000);
 }
 
 .content__card-paragraph {
