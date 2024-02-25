@@ -548,7 +548,6 @@
         </button>
       </div>
 
-      <form method="dialog">
       <dialog id="dialog-id" class="diskette">        
         <ul class="diskette__floppy-text">
           <li>
@@ -563,12 +562,14 @@
             >
           </li>
         </ul>
-      </form>
         <button
-          class="diskette__button"
-          type="button"
-          onclick="window['dialog-id'].close()">ОК
-        </button>
+        class="diskette__button"
+        type="button"
+        onclick="window['dialog-id'].close()">
+        <span class="diskette__text">ОК</span>
+      </button>
+        
+        
       </dialog>
     </main>
     <script src="./scripts/set-theme.js"></script>
