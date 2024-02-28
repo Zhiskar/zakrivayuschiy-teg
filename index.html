@@ -53,7 +53,7 @@
         <div class="content__card-image">
           <p class="content__card-image-label">&lt;/ГОТОВ К НЕИЗВЕСТНОМУ&gt;</p>
           <img
-            class="content__card-image-picture start"
+            class="content__card-image-picture filter-multygradient"
             src="./images/start.png"
             alt="изображение рабочего места с компьютером"
             loading="lazy"
@@ -112,7 +112,7 @@
         <div class="content__card-image">
           <p class="content__card-image-label">&lt;/ИНТЕРЕС&gt;</p>
           <img
-            class="content__card-image-picture emty-list"
+            class="content__card-image-picture filter-contrast"
             src="./images/sprint_1_1.png"
             alt="черно-белое изображение человека на белом фоне"
             loading="lazy"
@@ -173,7 +173,7 @@
         <div class="content__card-image">
           <p class="content__card-image-label">&lt;ВРОДЕ ПОЛУЧАЕТСЯ&gt;</p>
           <img
-            class="content__card-image-picture sprint_1_2"
+            class="content__card-image-picture filter-hue-rotate"
             src="./images/sprint_1_2.png"
             alt="изображение одинокого альпиниста перед вершиной"
             loading="lazy"
@@ -232,7 +232,7 @@
         <div class="content__card-image">
           <p class="content__card-image-label">&lt;баланс&gt;</p>
           <img
-            class="content__card-image-picture desigions"
+            class="content__card-image-picture filter-grayscale"
             src="./images/sprint_2_1.png"
             alt="изображение балансирующих камней"
             loading="lazy"
@@ -293,7 +293,7 @@
         <div class="content__card-image">
           <p class="content__card-image-label">поддержка</p>
           <img
-            class="content__card-image-picture care"
+            class="content__card-image-picture filter-invert"
             src="./images/sprint_2_2.png"
             alt="изображение группы туристов, поднимающихся на заснеженную вершину"
             loading="lazy"
@@ -356,7 +356,7 @@
         <div class="content__card-image">
           <p class="content__card-image-label">&lt;решений много&gt;</p>
           <img
-            class="content__card-image-picture support"
+            class="content__card-image-picture filter-sepia"
             src="./images/sprint_3_1.png"
             alt="картинка с видом из окна на лестницу и гору вдалеке"
             loading="lazy"
@@ -416,7 +416,7 @@
         <div class="content__card-image">
           <p class="content__card-image-label">&lt;время&gt;</p>
           <img
-            class="content__card-image-picture lifes-style"
+            class="content__card-image-picture filter-blur"
             src="./images/sprint_3_2.png"
             alt="изображение мола и маяка далеко в ночном море"
             loading="lazy"
@@ -477,7 +477,7 @@
         <div class="content__card-image">
           <p class="content__card-image-label">&lt;и опять начало&gt;</p>
           <img
-            class="content__card-image-picture experience"
+            class="content__card-image-picture filter-brightness"
             src="./images/sprint_4.png"
             alt="изображение узкой улицы с которой открывается вид на море"
             loading="lazy"
@@ -541,35 +541,40 @@
           onclick="window['dialog-id'].showModal()"
           aria-controls="dialog-id"
         >
-          <svg viewBox="0 0 28 28" class="floppy">
-            <use href="./svg/floppy.svg#floppy"></use>
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            aria-hidden="true" 
+            viewBox="0 0 28 28"
+            width="28" 
+            height="28"
+            class="floppy"
+            >
+            <use href="./svg/floppy28.svg#floppy"></use>
           </svg>
-          <span class="button__text">Сохранить на память</span>
+          <span class="button__text">Сохранить на&nbsp;память</span>
         </button>
       </div>
 
-      <dialog id="dialog-id" class="diskette">
-        <form>
-        <ul class="diskette__floppy-text">
-          <li>
-            <svg
-              viewBox="0 0 39 39" class="diskette__floppy">
-              <use href="./svg/floppy.svg#floppy"></use>
+      <dialog id="dialog-id" class="dialog">
+        <form class="diskette" method="dialog">
+            
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              aria-hidden="true" 
+              viewBox="0 0 39 39" 
+              width="39" 
+              height="39" 
+              class="floppy diskette__floppy"
+              >
+              <use xlink:href="./svg/floppy39.svg#floppy"></use>
             </svg>
-          </li>
-          <li>
-            <span class="diskette__text"
-              >Вставьте дискету, чтобы продолжить</span
-            >
-          </li>
-        </ul>
-        </form>
-        <form method="dialog">
-          <button class="diskette__button">
-                <span class="diskette__text">ОК</span>
-            </button>
-        </form> 
-        
+          
+            <p class="diskette__text">Вставьте дискету, чтобы продолжить</p>          
+                  
+          <button class="diskette__button button">
+            <span class="button__text">ОК</span>
+          </button>
+        </form>         
       </dialog>
     </main>
     <script src="./scripts/set-theme.js"></script>
