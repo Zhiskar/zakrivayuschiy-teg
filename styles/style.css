@@ -129,17 +129,16 @@
 
 .theme-menu__button::after {
   content: "";
-  position: absolute;
   display: block;
-  width: 0%;
-  margin-block-start: 3px;
-  background-color: currentColor;
-  transition: width 0.3s;
-  transition-timing-function: ease;
-  inline-size: 100%;
   block-size: 2px;
+  background-color: currentColor;
+  position: absolute;
   inset-inline-start: 0;
   inset-block-start: 80%;
+  margin-block-start: 3px;
+  width: 0%;
+  transition: width 0.3s;
+  transition-timing-function: ease;
 }
 
 .theme-menu__button:focus-visible::after {
